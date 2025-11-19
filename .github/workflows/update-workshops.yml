@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate all_test.html
+      - name: Generate lists
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run generate
@@ -35,7 +35,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
-          git add all_test.html featured_workshops.html
+          git add all.html index.html
           git diff --cached --quiet || git commit -m "Update workshop lists [auto]"
           git push origin HEAD:master
 
