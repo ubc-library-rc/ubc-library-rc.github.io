@@ -1,0 +1,107 @@
+body { 
+	font-family: Arial, sans-serif; 
+	padding: 2rem; 
+	max-width: 850px; 
+	margin: auto; 
+	color: #2d3c48; 
+	font-size: 14px; 
+}
+
+h1 { 
+	font-size: 1.6rem; 
+	font-weight: 300; 
+	margin-bottom: 0.3rem;
+	margin-top: 3rem;
+}
+
+h2 { 
+	margin-top: 2rem; 
+	font-size: 1.4rem; 
+	font-weight: 300; 
+	margin-bottom: 0.3rem
+}
+
+ul { 
+	list-style: none; 
+	padding-left: 0; 
+}
+
+li { margin-bottom: 0.2rem;} 
+
+a { 
+	color: #3e8cb7; 
+	text-decoration: none; 
+}
+
+a:hover { text-decoration: underline;}
+
+.archived { font-style: italic; }
+
+.large { font-size: 1.4em; font-weight: 300; } 
+
+section {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-botom: inherit;}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#header-img {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+#header-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+#header-text {
+  font-size: 1.9rem;
+  font-weight: 300;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+#header-link {
+  flex: 0 0 auto;
+  text-align: right;
+  min-width: 200px;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 columns on wide screens */
+  gap: 1.5rem; /* spacing between items */
+  margin-top: 1rem;
+}
+
+.workshop-card {
+  padding: 0; /* no card styling, just spacing */
+}
+
+.workshop-card a {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem; /* small spacing between title and blurb */
+}
+
+.workshop-card .blurb {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 800px) {
+  .workshop-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+}
