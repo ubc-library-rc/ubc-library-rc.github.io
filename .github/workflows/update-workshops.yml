@@ -37,5 +37,5 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git add all.html index.html
           git diff --cached --quiet || git commit -m "Update workshop lists [auto]"
-          git push origin HEAD:master
+          git push origin HEAD:main
 
