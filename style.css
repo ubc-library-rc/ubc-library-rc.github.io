@@ -41,7 +41,7 @@ a:hover { text-decoration: underline;}
 
 section {
 	border-bottom: 1px solid rgba(0,0,0,0.1);
-	padding-botom: inherit;}
+	padding-bottom: 10px;}
 
 .header-flex {
   display: flex;
