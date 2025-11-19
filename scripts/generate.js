@@ -252,7 +252,8 @@ async function main() {
     </div>
   </section>
   <h1>Featured Workshops</h1>
-  <p>For a list of all workshops visit <a href="https://ubc-library-rc.github.io/all.html">https://ubc-library-rc.github.io/all.html</a></p>
+  <p>For currently scheduled workshops visit <a href="https://researchcommons.library.ubc.ca/events/">https://researchcommons.library.ubc.ca/events/</a><br />
+  For a longer list of all workshops visit <a href="https://ubc-library-rc.github.io/all.html">https://ubc-library-rc.github.io/all.html</a></p>
   ${sectionsFeatured}
   ${nonRepoFeaturedWorkshops}
 </body>
